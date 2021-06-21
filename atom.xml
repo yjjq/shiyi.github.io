@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://yuhuaixu.com</id>
+    <title>玄</title>
+    <updated>2021-06-21T13:32:49.326Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://yuhuaixu.com"/>
+    <link rel="self" href="https://yuhuaixu.com/atom.xml"/>
+    <subtitle>云起于槐序</subtitle>
+    <logo>https://yuhuaixu.com/images/avatar.png</logo>
+    <icon>https://yuhuaixu.com/favicon.ico</icon>
+    <rights>All rights reserved 2021, 玄</rights>
+    <entry>
+        <title type="html"><![CDATA[个人博客搭建指南：基础篇]]></title>
+        <id>https://yuhuaixu.com/post/1/</id>
+        <link href="https://yuhuaixu.com/post/1/">
+        </link>
+        <updated>2021-06-21T02:58:32.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>此指南是搭建静态网页的，不涉及高深知识。不需要服务器和编程知识。</p>
+</blockquote>
+<h4 id="名词解释">名词解释</h4>
+<p>Gridea ：博客搭建的客户端，可以用来设计自己的博客，编辑文章并发布。</p>
+<p>GitHub ：代码托管服务商，微软旗下。用来托管自己的博客代码，并使其可以通过互联网访问。</p>
+<p>Coding ：代码托管服务商，腾讯旗下。用来托管自己的博客代码，并使其可以通过互联网访问。</p>
+<p>域名 ：浏览器地址栏的网址，就是域名，可以通过域名来访问自己的网站。</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516152958.png" alt="image-20200516152840500" />
+<p>图床 ：用于在网络上存放图片的地方，文章中的图片放到图床中可以加快网页加载速度。</p>
+<h4 id="基本搭建流程">基本搭建流程</h4>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516152650.png" alt="image-20200516151139833"  />
+<p>静态博客搭建最基本的就是代码托管和前端交互，做好这两个部分，就可以搭建一个可以在互联网上访问的网站。然后在此基础上，可以对自己的网站样式和功能进行自定义。当然了，自定义是需要一定的技术的，从易到难的三门技术：Html、CSS、JavaScript 。</p>
+<h4 id="准备工作">准备工作</h4>
+<ul>
+<li>注册 GitHub 账号 / 或者 / 注册 Coding 账号</li>
+<li>下载 Gridea 软件</li>
+</ul>
+<h4 id="代码托管-github-coding">代码托管 ：GitHub / Coding</h4>
+<p>GitHub / Coding / 服务器 ，三者选一。但本指南不涉及服务器相关技术，仅作了解。</p>
+<p><s>其实是我不会用服务器，而且服务器有金钱成本，人穷请忽略，人富请忽视。</s></p>
+<p>下面是 GitHub / Coding 分类指南。</p>
+<h5 id="github">GitHub</h5>
+<p>确保开始前你已经注册好 GitHub 的账号，如果没有，请先注册账号。</p>
+<h6 id="创建仓库">创建仓库</h6>
+<ul>
+<li>
+<p>登录 GitHub</p>
+</li>
+<li>
+<p>找到仓库页面，创建一个新的仓库，此仓库用来存放你的博客网站源代码。</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516201220.png" alt="image-20200516161656656"  />
+</li>
+<li>
+<p>填写仓库名称，描述。创建新仓库。注意仓库名称一定要符合格式 ：xxx.github.io</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516163001.png" alt="image-20200516162835521"  />
+</li>
+<li>
+<p>创建好仓库后，点击仓库设置。下拉至 GitHub Pages 。</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516201407.png" alt="image-20200516163519726"  />
+</li>
+<li>
+<p>在 GitHub Pages 中选择一个主题，对 Pages 进行初始化。主题随便选择一个即可。</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516164053.png" alt="image-20200516164004705"  />
+</li>
+<li>
+<p>设置完成后就可以通过访问 xxx.github.io 看到自己的博客网站了。</p>
+<p>当然，这只是说明你的博客能够在互联网上访问了，但是博客内容、样式以及功能等网站相关管理就要靠我们的 Gridea 了。</p>
+</li>
+</ul>
+<h6 id="创建-token">创建 token</h6>
+<p>token 是我们仓库的访问权限密钥，用于后续设置 Gridea 的远程连接使用。</p>
+<ul>
+<li>
+<p>来到i GitHub 个人主页，进行账号设置。</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516173144.png" alt="image-20200516171830537"  />
+</li>
+<li>
+<p>点击开发者设置。</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516173209.png" alt="image-20200516172015707"  />
+</li>
+<li>
+<p>点击私人通道密钥</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516173156.png" alt="image-20200516172142506" />
+</li>
+<li>
+<p>创建新密钥</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516173225.png" alt="image-20200516172331866" />
+</li>
+<li>
+<p>写好 token 描述，权限全选打勾，然后生成 token 。</p>
+<p>注意生成的 token 只显示一次，请务必记好！</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516173225.png" alt="image-20200516173021295"  />
+</li>
+</ul>
+<h5 id="coding">Coding</h5>
+<p>确保开始前你已经注册好 Coding 的账号，如果没有，请先注册账号。</p>
+<p>先占个位吧，不想写了...</p>
+<p>大体上跟 GitHub 设置一样。</p>
+<h4 id="代码管理-gridea">代码管理 ：Gridea</h4>
+<p>前端交互也就是博客网站管理。直接从代码仓库管理网站太过麻烦，所以我们需要一个客户端来管理代码仓库，以此来管理网站。</p>
+<p>Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。</p>
+<p>下面是 Gridea 使用指南。</p>
+<ul>
+<li>
+<p>使用 Gridea 的第一步就是要设置好远程连接。</p>
+<p>远程连接是连接 Gridea 和 代码仓库，这样我们在 Gridea 上的动作才能让代码仓库相应地修改代码。</p>
+<img src="https://cdn.jsdelivr.net/gh/yjjq/imgbed/img/20200516171132.png" alt="image-20200516170940718" />
+</li>
+<li>
+<p>按图示填写好，检测远程连接成功后，就可以点击同步，然后访问看看自己的博客是什么样子了。</p>
+</li>
+</ul>
+<p>当然，这只是最基本的设置。完成远程连接后，就可以通过文章栏写文章并发布，还可以对主题进行设置，选择自己心仪的网站样式。</p>
+<p>到了这里，个人博客就算是搭建好了。这时候的博客甚至有些简陋，这就要靠自定义来对我们的博客网站进行后续美化了。</p>
+<h4 id="自定义">自定义</h4>
+<p>自定义可以美化我们的博客网站，而且自定义充满了多样性，暂时我还想不到该怎么写，就把自定义的内容放到我以后的文章里吧。当作进阶篇了   : )</p>
+<blockquote>
+<p>最后的最后，如果有什么问题，欢迎一起探讨</p>
+</blockquote>
+<hr>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://yuhuaixu.com/post/hello-gridea/</id>
+        <link href="https://yuhuaixu.com/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
