@@ -587,6 +587,16 @@ body {
   font-size: 18px;
   margin-bottom: 24px;
 }
+.gallery-box {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.gallery-box img {
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 16px;
+}
 .about-page {
   width: 96%;
   max-width: 960px;

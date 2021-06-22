@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuhuaixu.com</id>
-    <title>玄</title>
-    <updated>2021-06-21T13:37:04.676Z</updated>
+    <title>于槐序</title>
+    <updated>2021-06-22T02:37:35.189Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuhuaixu.com"/>
     <link rel="self" href="https://yuhuaixu.com/atom.xml"/>
-    <subtitle>云起于槐序</subtitle>
+    <subtitle>此之呈于诸君者，起于槐序，成于槐序。</subtitle>
     <logo>https://yuhuaixu.com/images/avatar.png</logo>
     <icon>https://yuhuaixu.com/favicon.ico</icon>
-    <rights>All rights reserved 2021, 玄</rights>
+    <rights>All rights reserved 2021, 于槐序</rights>
     <entry>
         <title type="html"><![CDATA[个人博客搭建指南：基础篇]]></title>
         <id>https://yuhuaixu.com/post/1/</id>
         <link href="https://yuhuaixu.com/post/1/">
         </link>
-        <updated>2021-06-21T02:58:32.000Z</updated>
+        <updated>2020-05-21T02:58:32.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
 <p>此指南是搭建静态网页的，不涉及高深知识。不需要服务器和编程知识。</p>
 </blockquote>
