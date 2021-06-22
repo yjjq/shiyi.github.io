@@ -219,7 +219,7 @@ summary {
 }
 @font-face {
   font-family: 'xwwk';
-  src: url(https://yuhuaixu.com/style/LXGWWenKai-Regular.ttf);
+  src: url(./fonts/LXGWWenKai-Regular.ttf);
 }
 * {
   margin: 0;
