@@ -217,10 +217,6 @@ progress {
 summary {
   display: list-item;
 }
-@font-face {
-  font-family: 'xwwk';
-  src: url(./fonts/LXGWWenKai-Regular.ttf);
-}
 * {
   margin: 0;
 }
@@ -233,9 +229,6 @@ body {
 }
 a {
   text-decoration: none;
-}
-a:visited {
-  color: blue;
 }
 a:hover {
   color: #000;
@@ -265,7 +258,7 @@ body {
   width: 96%;
   max-width: 960px;
   margin: 0 auto;
-  background-image: url(https://zealeye.com/static/img/ioVAOkKKlmAXFxhYEaxdss.svg);
+  background-image: url(../images/ioVAOkKKlmAXFxhYEaxdss.svg);
   background-repeat: no-repeat;
   background-position-x: 450px;
   background-position-y: 40px;

@@ -111,7 +111,82 @@ Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea<
 <button onclick="topFunction()" id="myBtn" title="回顶部">🔝</button>
 
 
-<script src="https://zealeye.com/js/main.js"></script>
+<script>
+  
+//标题动画 开始
+let title = document.querySelector(".title");
+let subTitle = document.querySelector(".subtitle");
+let fadeAndMove = [
+  {
+    opacity: 0,
+    transform: `translateY(-20px)`,
+  },
+  {
+    opacity: 1,
+    transform: `translateY(0px)`,
+  },
+];
+
+let titleTiming = {
+  duration: 2000,
+  easing: "ease-in-out",
+};
+
+const titleChange = title.animate(fadeAndMove, titleTiming);
+
+let expand = [
+  {
+    letterSpacing: "-0.5em",
+    opacity: 0,
+  },
+  {
+    letterSpacing: "initial",
+    opacity: 1,
+  },
+];
+
+let subTitleTiming = {
+  duration: titleChange.effect.getComputedTiming().duration / 2,
+  easing: "ease-in-out",
+};
+
+const subTitleChange = subTitle.animate(expand, subTitleTiming);
+subTitleChange.pause();
+
+//滑动 或者 点击 触发事件
+// document.addEventListener("scroll", () => {
+//   // idle, running, paused, finished
+//   if (subTitleChange.playState !== "finished") {
+//     subTitleChange.play();
+//   }
+// });
+
+document.addEventListener("click", () => {
+  // idle, running, paused, finished
+  if (subTitleChange.playState !== "finished") {
+    subTitleChange.play();
+  }
+});
+//标题动画 结束
+
+
+// 当网页向下滑动 20px 出现"返回顶部" 按钮
+window.onscroll = function() {scrollFunction()};
+ 
+function scrollFunction() {console.log(121);
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+ 
+// 点击按钮，返回顶部
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 <script>
   hljs.initHighlightingOnLoad()
 </script>
