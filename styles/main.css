@@ -219,14 +219,14 @@ summary {
 }
 @font-face {
   font-family: 'xwwk';
-  src: url(./fonts/LXGWWenKai-Regular.ttf);
+  src: url(https://yuhuaixu.com/style/LXGWWenKai-Regular.ttf);
 }
 * {
   margin: 0;
 }
 body {
   color: #333;
-  font-family: "Helvetica", 'xwwk', "Arial", sans-serif, 'Microsoft YaHei', sans-serif;
+  font-family: "Helvetica", 'xwwk', 'Microsoft YaHei', "Arial", sans-serif, sans-serif;
   font-size: 16px;
   background-color: #F8F8F5;
   padding: 1px 10px;
