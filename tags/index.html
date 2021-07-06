@@ -1,159 +1,70 @@
-<html>
-  <head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>暮归于槐序</title>
-<link rel="shortcut icon" href="https://yuhuaixu.com/favicon.ico?v=1625536759288">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yuhuaixu.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://yuhuaixu.com/media/css/tailwind.css">
+<link rel="stylesheet" href="https://yuhuaixu.com/media/css/bulma.css">
 <link rel="stylesheet" href="https://yuhuaixu.com/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="暮归于槐序 - Atom Feed" href="https://yuhuaixu.com/atom.xml">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-
-
-
-
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="page-header">
-    <div class="nav">
-      <a href="https://yuhuaixu.com">
-      <img class="avatar" src="https://yuhuaixu.com/images/avatar.png?v=1625536759288" alt="">
-      </a>
-      
-      <div class="menu-container">
-        
-          
-            <a href="/archives" class="menu">
-              归档
-            </a>
-          
-        
-          
-            <a href="/tags" class="menu">
-              标签
-            </a>
-          
-        
-          
-            <a href="/gallery" class="menu">
-              请览
-            </a>
-          
-        
-      </div>
-    </div>
     
-  </div>
-  
 
-        <div class="info container">
-          <h1 class="page-title title">
-            Tags
-          </h1>
-          <p class="page-description subtitle">
-            There are all tags.
-          </p>
-        </div>
-
-        <div class="tags-container">
+  <meta name="description" content="此之呈于诸君者，起于槐序，成于槐序。" />
+</head>
+<body>
+    <header>
+  <nav>
+    
+      <a class="menu" href="/" target="" >
+        主页
+      </a>
+    
+      <a class="menu" href="/archives" target="" >
+        归档
+      </a>
+    
+      <a class="menu" href="/tags" target="" >
+        标签
+      </a>
+    
+    <a class="menu" href="https://yuhuaixu.com/atom.xml" target="_blank" >
+      RSS
+    </a>
+  </nav>
+</header> 
+    <section class="content">
+      <h1 class="section-title">
+        Tags
+      </h1>
+      <p class="section-subtitle animate__animated animate__zoomIn animate__slow">
+          Life is fantastic.
+      </p>
+      <div class="  max-w-4xl w-full mx-auto pt-32">
+        <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
           
-            <a class="tag" href="https://yuhuaixu.com/tag/Cfr0pZAF5/">Gridea</a>
+            <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+              <a href="https://yuhuaixu.com/tag/Cfr0pZAF5/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                <i class="ri-hashtag"></i>
+                Gridea（1）
+              </a>
+            </div>
           
         </div>
+      </div>
+    </section>
+    
 
-        <div class="site-footer">
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
   Designed and Coded by © <a href="http://mugui.me">木鬼</a>
 Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</div>
+</footer>
+<button onclick="topFunction()" id="backtop" title="回顶部">🔝</button>
 
-<button onclick="topFunction()" id="myBtn" title="回顶部">🔝</button>
-
-
-<script>
-  
-//标题动画 开始
-let title = document.querySelector(".title");
-let subTitle = document.querySelector(".subtitle");
-let fadeAndMove = [
-  {
-    opacity: 0,
-    transform: `translateY(-20px)`,
-  },
-  {
-    opacity: 1,
-    transform: `translateY(0px)`,
-  },
-];
-
-let titleTiming = {
-  duration: 2000,
-  easing: "ease-in-out",
-};
-
-const titleChange = title.animate(fadeAndMove, titleTiming);
-
-let expand = [
-  {
-    letterSpacing: "-0.5em",
-    opacity: 0,
-  },
-  {
-    letterSpacing: "initial",
-    opacity: 1,
-  },
-];
-
-let subTitleTiming = {
-  duration: titleChange.effect.getComputedTiming().duration / 2,
-  easing: "ease-in-out",
-};
-
-const subTitleChange = subTitle.animate(expand, subTitleTiming);
-subTitleChange.pause();
-
-//滑动 或者 点击 触发事件
-// document.addEventListener("scroll", () => {
-//   // idle, running, paused, finished
-//   if (subTitleChange.playState !== "finished") {
-//     subTitleChange.play();
-//   }
-// });
-
-document.addEventListener("click", () => {
-  // idle, running, paused, finished
-  if (subTitleChange.playState !== "finished") {
-    subTitleChange.play();
-  }
-});
-//标题动画 结束
-
-
-// 当网页向下滑动 20px 出现"返回顶部" 按钮
-window.onscroll = function() {scrollFunction()};
- 
-function scrollFunction() {console.log(121);
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
- 
-// 点击按钮，返回顶部
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
-      </div>
-    </div>
-  </body>
+  <script src="https://yuhuaixu.com/media/scripts/main.js"></script>
+</body>
 </html>
