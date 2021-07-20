@@ -1,0 +1,22 @@
+<div class="list-left">
+  <%posts.forEach(function(post){%>
+    <article class="post-card search-post">
+      <div class="post-card-right">
+        <h2 class="post-card-title"><a href="<%= post.link %>"><%= post.title %></a></h2>
+        <p class="post-card-abstract"><%- post.searchedPreview %></p>
+        <div class="post-card-info">
+          <time class="post-card-date"> 
+            <%= post.dateFormat %> 
+          </time>
+          <div class="post-card-tag">
+            <% post.tags.forEach(function(tag) { %>
+              <a href="<%= tag.link %>" class="post-card-tag">
+                <%= tag.name %>
+              </a>
+            <% }); %>
+          </div>
+        </div>
+      </div>
+    </article>
+  <%});%>
+</div>
