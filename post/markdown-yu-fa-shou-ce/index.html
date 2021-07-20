@@ -1,0 +1,294 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Markdown 语法手册 | 写于槐序</title>
+<link rel="shortcut icon" href="https://yuhuaixu.com/favicon.ico?v=1626753158036">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yuhuaixu.com/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+
+
+
+  </head>
+  <body>
+    <header>
+  <nav>
+    <div class="logo">
+      <a href="https://yuhuaixu.com">
+        <img class="" src="https://yuhuaixu.com/favicon.ico?v=1626753158036" alt="">
+      </a>
+    </div>
+    <div class="menus">
+      
+        
+          <a href="/" class="menu">
+            主页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu">
+            标签
+          </a>
+        
+      
+      <a class="menu" href="https://yuhuaixu.com/atom.xml" target="_blank" >
+        RSS
+      </a>
+    </div>
+  </nav>
+</header>
+<div class="header-bar"></div>
+
+    
+    <section class="banner">
+      <h1 class="page-title">Markdown 语法手册</h1>
+      <p class="page-subtitle">
+        <time class="post-time">
+          · 2021-07-20 ·
+        </time>
+        
+      </p>
+    </section>
+
+    <section class="content">
+        <div class="post-detail">
+          <article class="post">
+            <!-- 
+              <h2 class="post-title">
+                Markdown 语法手册
+              </h2> 
+            -->
+            <!-- 
+              <div class="post-info">
+                <time class="post-time">
+                  · 2021-07-20 ·
+                </time>
+                
+              </div>
+            -->
+            
+            
+              <div class="post-feature-image" style="background-image: url('https://img.zcool.cn/community/01a3c960f0003411013eaf7081f5f8.jpg@1280w_1l_2o_100sh.jpg')">
+              </div>
+            
+            <div class="post-content">
+              <p>Markdown是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。</p>
+<!-- more -->
+<p>Markdown 语法简洁明了，易于掌握，所以用它来写作是件既效率又舒服的事情。我们所熟知的和一些大型CMS，如Joomla!、Drupal等都能很好的支持Markdown。我是因为写GitHub项目库中的Readme才开始</p>
+<p>接触Markdown。</p>
+<p>Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。</p>
+<p>Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书</p>
+<p>写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p>
+<p>Headers 标题：</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h1 id="另外h1和h2还能用以下方式显示一级标题">另外，H1和H2还能用以下方式显示：<br>
+一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<p>Emphasis 文本强调：</p>
+<p><em>斜体</em> or <em>强调</em><br>
+<strong>加粗</strong> or <strong>加粗</strong><br>
+<em><strong>粗斜体</strong></em> or _<strong>粗斜体</strong></p>
+<p>但是，如果你的 * 和 _ 两边都有空白的话，它们就只会被当成普通的符号：这是一段* 文本强调 *的说</p>
+<p>明示例。<br>
+如果要在文字前后直接插入普通的星号或底线，你可以用反斜线（转义符）：<br>
+*this text is surrounded by literal asterisks*</p>
+<p>Lists 列表：</p>
+<p>Unordered 无序列表：</p>
+<ul>
+<li>无序列表</li>
+<li>子项</li>
+<li>子项</li>
+</ul>
+<ul>
+<li>无序列表</li>
+<li>子项</li>
+<li>子项</li>
+</ul>
+<ul>
+<li>无序列表</li>
+<li>子项</li>
+<li>子项</li>
+</ul>
+<p>Ordered 有序列表：</p>
+<ol>
+<li>
+<p>第一行</p>
+</li>
+<li>
+<p>第二行</p>
+</li>
+<li>
+<p>第三行</p>
+</li>
+<li>
+<p>第一行</p>
+</li>
+</ol>
+<ul>
+<li>第二行</li>
+<li>第三行</li>
+</ul>
+<p>组合：</p>
+<ul>
+<li>
+<p>产品介绍（子项无项目符号）<br>
+此时子项，要以一个制表符或者4个空格缩进</p>
+</li>
+<li>
+<p>产品特点</p>
+</li>
+</ul>
+<ol>
+<li>特点1</li>
+</ol>
+<ul>
+<li>特点2</li>
+<li>特点3</li>
+</ul>
+<ul>
+<li>产品功能</li>
+</ul>
+<ol>
+<li>功能1</li>
+</ol>
+<ul>
+<li>功能2</li>
+<li>功能3</li>
+</ul>
+<p>可有时我们会出现这样的情况，首行内容是以日期或数字开头：2013. 公司年度目标。<br>
+为了避免也被转化成有序列表，我们可以在&quot;.&quot;前加上反斜杠（转义符）：2013. 公司年度目标。</p>
+<p>Links 连接（title为可选项）：</p>
+<p>Inline-style 内嵌方式：<br>
+<a href="https://www.google.com" title="title text">link text</a></p>
+<p>Reference-style 引用方式：<br>
+[link text][id]<br>
+[id]: Internet for people, not profit &quot;title text&quot;</p>
+<p>Relative reference to a repository file 引用存储文件：<br>
+<a href="../path/file/readme.text" title="title text">link text</a></p>
+<p>还能这样使用：<br>
+[link text][]<br>
+[link text]: the front page of the internet</p>
+<p>Email 邮件：<br>
+<a href="mailto:ydxred@ydxred.com">ydxred@ydxred.com</a></p>
+<p>Images 图片：</p>
+<p>Inline-style 内嵌方式：<br>
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="title text" loading="lazy"></p>
+<p>Reference-style 引用方式：<br>
+![alt text][logo]<br>
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;title text&quot;</p>
+<p>Code and Syntax Highlighting 代码和语法高亮：</p>
+<p>标记一小段行内代码：<br>
+本文是一篇介绍<code>Markdown</code>的语法的文章</p>
+<p>如果高亮的内容包含<code>号，可以这样写： ``</code>包裹起来` ``</p>
+<p>语法高亮：</p>
+<pre><code class="language-html">&lt;div&gt;Syntax Highlighting&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">body{font-size:12px}
+</code></pre>
+<pre><code class="language-javascript">var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+</code></pre>
+<pre><code class="language-php">&lt;?php
+echo &quot;hello, world!&quot;;
+?&gt;
+</code></pre>
+<pre><code class="language-python">s = &quot;Python syntax highlighting&quot;
+print s
+</code></pre>
+<p>Block Code 代码分组(代码区块)：</p>
+<p>在该行开头缩进4个空格或一个制表符(tab)</p>
+<p><strong>Blockquotes 引用：</strong></p>
+<blockquote>
+<p>Email-style angle brackets<br>
+are used for blockquotes.</p>
+<blockquote>
+<p>And, they can be nested.</p>
+</blockquote>
+<h4 id="headers-in-blockquotes">Headers in blockquotes</h4>
+<ul>
+<li>You can quote a list.</li>
+<li>Etc.</li>
+</ul>
+</blockquote>
+<p>Hard Line Breaks 换行：</p>
+<p>在一行的结尾处加上2个或2个以上的空格，也可以使用</br>标签<br>
+第一行文字，<br>
+第二行文字</p>
+<p>Horizontal Rules 水平分割线：</p>
+<hr>
+<hr>
+<hr>
+<p>Escape character 转义符(反斜杠)：</p>
+<p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁</p>
+<p>边的方式来做出强调效果，你可以在星号的前面加上反斜杠：<br>
+*literal asterisks*<br>
+Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：<br>
+\反斜杠 `反引号 *星号 _下划线 {}花括号 []方括号 ()括弧 #井字号 +加号 -减号 .英</p>
+<p>文句 !感叹号</p>
+<p>Additional 补充：</p>
+<p>Markdown也支持传统的HTML标签。<br>
+比如一个链接，你不太喜欢Markdown的写法，也可以直接写成http://www.baidu.com&quot;&gt;百度</p>
+</a>
+<p>Markdown官网：Daring Fireball: Markdown<br>
+参考资料：Markdown 語法說明</p>
+<p>Markdown在线编辑器：<br>
+Dillinger：Dillinger, the Last Markdown Editor ever.<br>
+Markdown Here：Markdown Here<br>
+原格式显示</p>
+<pre>
+内容...
+</pre>
+<p>具体效果可以以上文字复制到Markdown中观看</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://yuhuaixu.com/post/qi-yue-liu-ri-yi-zai-hui/">
+              <h3 class="post-title">
+                七月六日  宜再会
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+
+    </section>
+    
+    <footer>
+  Designed and Coded by © <a href="http://mugui.me">木鬼</a>
+丨Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</footer>
+
+<button onclick="topFunction()" id="backtop" title="回顶部">🔝</button>
+
+<script src="https://yuhuaixu.com/media/js/main.js"></script>
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+  </body>
+</html>
