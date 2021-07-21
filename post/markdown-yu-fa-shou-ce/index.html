@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="light dark">
 <title>Markdown 语法手册 | 写于槐序</title>
-<link rel="shortcut icon" href="https://yuhuaixu.com/favicon.ico?v=1626779429162">
+<link rel="shortcut icon" href="https://yuhuaixu.com/favicon.ico?v=1626884904961">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://yuhuaixu.com/styles/main.css">
 
@@ -22,7 +22,7 @@
   <nav>
     <div class="logo">
       <a href="https://yuhuaixu.com">
-        <img class="" src="https://yuhuaixu.com/favicon.ico?v=1626779429162" alt="">
+        <img class="" src="https://yuhuaixu.com/favicon.ico?v=1626884904961" alt="">
       </a>
     </div>
     <div class="menus header-1">
@@ -42,6 +42,12 @@
         
           <a href="/tags" class="menu">
             标签
+          </a>
+        
+      
+        
+          <a href="http://shiyi.me" class="menu" target="_blank">
+            关于我
           </a>
         
       
@@ -84,6 +90,12 @@
             
               <a href="/tags" class="menu">
                 标签
+              </a>
+            
+          
+            
+              <a href="http://shiyi.me" class="menu" target="_blank">
+                关于我
               </a>
             
           
@@ -134,176 +146,644 @@
             <div class="post-content">
               <p>Markdown是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。</p>
 <!-- more -->
-<p>Markdown 语法简洁明了，易于掌握，所以用它来写作是件既效率又舒服的事情。我们所熟知的和一些大型CMS，如Joomla!、Drupal等都能很好的支持Markdown。我是因为写GitHub项目库中的Readme才开始</p>
-<p>接触Markdown。</p>
-<p>Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。</p>
-<p>Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书</p>
-<p>写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p>
-<p>Headers 标题：</p>
-<h1 id="h1">H1</h1>
-<h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<h4 id="h4">H4</h4>
-<h5 id="h5">H5</h5>
-<h6 id="h6">H6</h6>
-<h1 id="另外h1和h2还能用以下方式显示一级标题">另外，H1和H2还能用以下方式显示：<br>
-一级标题</h1>
-<h2 id="二级标题">二级标题</h2>
-<p>Emphasis 文本强调：</p>
-<p><em>斜体</em> or <em>强调</em><br>
-<strong>加粗</strong> or <strong>加粗</strong><br>
-<em><strong>粗斜体</strong></em> or _<strong>粗斜体</strong></p>
-<p>但是，如果你的 * 和 _ 两边都有空白的话，它们就只会被当成普通的符号：这是一段* 文本强调 *的说</p>
-<p>明示例。<br>
-如果要在文字前后直接插入普通的星号或底线，你可以用反斜线（转义符）：<br>
-*this text is surrounded by literal asterisks*</p>
-<p>Lists 列表：</p>
-<p>Unordered 无序列表：</p>
-<ul>
-<li>无序列表</li>
-<li>子项</li>
-<li>子项</li>
-</ul>
-<ul>
-<li>无序列表</li>
-<li>子项</li>
-<li>子项</li>
-</ul>
-<ul>
-<li>无序列表</li>
-<li>子项</li>
-<li>子项</li>
-</ul>
-<p>Ordered 有序列表：</p>
-<ol>
-<li>
-<p>第一行</p>
-</li>
-<li>
-<p>第二行</p>
-</li>
-<li>
-<p>第三行</p>
-</li>
-<li>
-<p>第一行</p>
-</li>
-</ol>
-<ul>
-<li>第二行</li>
-<li>第三行</li>
-</ul>
-<p>组合：</p>
-<ul>
-<li>
-<p>产品介绍（子项无项目符号）<br>
-此时子项，要以一个制表符或者4个空格缩进</p>
-</li>
-<li>
-<p>产品特点</p>
-</li>
-</ul>
-<ol>
-<li>特点1</li>
-</ol>
-<ul>
-<li>特点2</li>
-<li>特点3</li>
-</ul>
-<ul>
-<li>产品功能</li>
-</ul>
-<ol>
-<li>功能1</li>
-</ol>
-<ul>
-<li>功能2</li>
-<li>功能3</li>
-</ul>
-<p>可有时我们会出现这样的情况，首行内容是以日期或数字开头：2013. 公司年度目标。<br>
-为了避免也被转化成有序列表，我们可以在&quot;.&quot;前加上反斜杠（转义符）：2013. 公司年度目标。</p>
-<p>Links 连接（title为可选项）：</p>
-<p>Inline-style 内嵌方式：<br>
-<a href="https://www.google.com" title="title text">link text</a></p>
-<p>Reference-style 引用方式：<br>
-[link text][id]<br>
-[id]: Internet for people, not profit &quot;title text&quot;</p>
-<p>Relative reference to a repository file 引用存储文件：<br>
-<a href="../path/file/readme.text" title="title text">link text</a></p>
-<p>还能这样使用：<br>
-[link text][]<br>
-[link text]: the front page of the internet</p>
-<p>Email 邮件：<br>
-<a href="mailto:ydxred@ydxred.com">ydxred@ydxred.com</a></p>
-<p>Images 图片：</p>
-<p>Inline-style 内嵌方式：<br>
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="title text" loading="lazy"></p>
-<p>Reference-style 引用方式：<br>
-![alt text][logo]<br>
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;title text&quot;</p>
-<p>Code and Syntax Highlighting 代码和语法高亮：</p>
-<p>标记一小段行内代码：<br>
-本文是一篇介绍<code>Markdown</code>的语法的文章</p>
-<p>如果高亮的内容包含<code>号，可以这样写： ``</code>包裹起来` ``</p>
-<p>语法高亮：</p>
-<pre><code class="language-html">&lt;div&gt;Syntax Highlighting&lt;/div&gt;
+<h2 id="总览">总览</h2>
+<p>几乎所有 Markdown 应用程序都支持 John Gruber 原始设计文档中列出的 Markdown 基本语法。但是，Markdown 处理程序之间存在着细微的变化和差异，我们都会尽可能标记出来。</p>
+<h2 id="标题headings">标题（Headings）</h2>
+<p>要创建标题，请在单词或短语前面添加井号 (<code>#</code>) 。井号的数量代表了标题的级别。例如，添加三个井号即创建一个三级标题 (<code>&lt;h3&gt;</code>) (例如：<code>### My Header</code>)。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># Heading level 1</code></td>
+<td><code>&lt;h1&gt;Heading level 1&lt;/h1&gt;</code></td>
+<td>Heading level 1</td>
+</tr>
+<tr>
+<td><code>## Heading level 2</code></td>
+<td><code>&lt;h2&gt;Heading level 2&lt;/h2&gt;</code></td>
+<td>Heading level 2</td>
+</tr>
+<tr>
+<td><code>### Heading level 3</code></td>
+<td><code>&lt;h3&gt;Heading level 3&lt;/h3&gt;</code></td>
+<td>Heading level 3</td>
+</tr>
+<tr>
+<td><code>#### Heading level 4</code></td>
+<td><code>&lt;h4&gt;Heading level 4&lt;/h4&gt;</code></td>
+<td>Heading level 4</td>
+</tr>
+<tr>
+<td><code>##### Heading level 5</code></td>
+<td><code>&lt;h5&gt;Heading level 5&lt;/h5&gt;</code></td>
+<td>Heading level 5</td>
+</tr>
+<tr>
+<td><code>###### Heading level 6</code></td>
+<td><code>&lt;h6&gt;Heading level 6&lt;/h6&gt;</code></td>
+<td>Heading level 6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="可选语法">可选语法</h3>
+<p>还可以在文本下方添加任意数量的 <code>==</code> 号来标识一级标题，或者 <code>--</code> 号来标识二级标题。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Heading level 1===============</code></td>
+<td><code>&lt;h1&gt;Heading level 1&lt;/h1&gt;</code></td>
+<td>Heading level 1</td>
+</tr>
+<tr>
+<td><code>Heading level 2---------------</code></td>
+<td><code>&lt;h2&gt;Heading level 2&lt;/h2&gt;</code></td>
+<td>Heading level 2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="标题heading用法的最佳实践">标题（Heading）用法的最佳实践</h3>
+<p>当井号（<code>#</code>）和标题文本之间没有空格时，各 Markdown 应用程序的处理方式是不一样的。为了兼容考虑，请在井号和标题文本之间添加一个空格。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># Here's a Heading</code></td>
+<td><code>#Here's a Heading</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="段落paragraphs">段落（Paragraphs）</h2>
+<p>要创建段落，请使用空白行将一行或多行文本进行分隔。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>I really like using Markdown.I think I'll use it to format all of my documents from now on.</code></td>
+<td><code>&lt;p&gt;I really like using Markdown.&lt;/p&gt;&lt;p&gt;I think I'll use it to format all of my documents from now on.&lt;/p&gt;</code></td>
+<td>I really like using Markdown.I think I'll use it to format all of my documents from now on.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="段落paragraph用法的最佳实践">段落（Paragraph）用法的最佳实践</h3>
+<p>除非 <a href="https://www.markdown.xyz/basic-syntax/#paragraphs">段落在列表中</a>，否则不要用空格（spaces）或制表符（ tabs）缩进段落。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Don't put tabs or spaces in front of your paragraphs.Keep lines left-aligned like this.</code></td>
+<td><code>This can result in unexpected formatting problems. Don't add tabs or spaces in front of paragraphs.</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="换行line-breaks">换行（Line Breaks）</h2>
+<p>在一行的末尾添加两个或多个空格，然后按回车键（return），即可创建一个换行（line break） (<code>&lt;br&gt;</code>)。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>This is the first line. And this is the second line.</code></td>
+<td><code>&lt;p&gt;This is the first line.&lt;br&gt;And this is the second line.&lt;/p&gt;</code></td>
+<td>This is the first line. And this is the second line.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="换行line-break用法的最佳实践">换行（Line Break）用法的最佳实践</h3>
+<p>几乎每个 Markdown 应用程序都支持两个或多个空格进行换行 (称为 “结尾空格（trailing whitespace）”) 的方式，但这是有争议的，因为很难在编辑器中直接看到空格，并且很多人在每个句子后面都会有意或无意地添加两个空格。由于这个原因，你可能需要使用除结尾空格以外的其它方式来进行换行。幸运的是，几乎每个 Markdown 应用程序都支持另一种换行方式：HTML 的 <code>&lt;br&gt;</code> 标签。</p>
+<p>为了兼容性，请在行尾添加“结尾空格”或 HTML 的 <code>&lt;br&gt;</code> 标签来实现换行。</p>
+<p>还有两种其他方式我并不推荐使用。CommonMark 和其它几种轻量级标记语言支持在行尾添加反斜杠 (<code>\</code>) 的方式实现换行，但是并非所有 Markdown 应用程序都支持此种方式，因此从兼容性的角度来看，不推荐使用。并且至少有两种轻量级标记语言支持无须在行尾添加任何内容，只须键入回车键（ return）即可实现换行。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>First line with two spaces after. And the next line.First line with the HTML tag after.&lt;br&gt;And the next line.</code></td>
+<td><code>First line with a backslash after.\And the next line.First line with nothing after.And the next line.</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="强调emphasis">强调（Emphasis）</h2>
+<p>通过将文本设置为粗体或斜体来强调其重要性。</p>
+<h3 id="粗体bold">粗体（Bold）</h3>
+<p>要加粗文本，请在单词或短语的前后各添加两个星号（asterisks）或下划线（underscores）。如需加粗一个单词或短语的中间部分用以表示强调的话，请在要加粗部分的两侧各添加两个星号（asterisks）。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>I just love **bold text**.</code></td>
+<td><code>I just love &lt;strong&gt;bold text&lt;/strong&gt;.</code></td>
+<td>I just love <strong>bold text</strong>.</td>
+</tr>
+<tr>
+<td><code>I just love __bold text__.</code></td>
+<td><code>I just love &lt;strong&gt;bold text&lt;/strong&gt;.</code></td>
+<td>I just love <strong>bold text</strong>.</td>
+</tr>
+<tr>
+<td><code>Love**is**bold</code></td>
+<td><code>Love&lt;strong&gt;is&lt;/strong&gt;bold</code></td>
+<td>Love<strong>is</strong>bold</td>
+</tr>
+</tbody>
+</table>
+<h4 id="粗体bold用法最佳实践">粗体（Bold）用法最佳实践</h4>
+<p>Markdown 应用程序在如何处理单词或短语中间的下划线上并不一致。为兼容考虑，在单词或短语中间部分加粗的话，请使用星号（asterisks）。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Love**is**bold</code></td>
+<td><code>Love__is__bold</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="斜体italic">斜体（Italic）</h3>
+<p>要用斜体显示文本，请在单词或短语前后添加一个星号（asterisk）或下划线（underscore）。要斜体突出单词的中间部分，请在字母前后各添加一个星号，中间不要带空格。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Italicized text is the *cat's meow*.</code></td>
+<td><code>Italicized text is the &lt;em&gt;cat's meow&lt;/em&gt;.</code></td>
+<td>Italicized text is the <em>cat’s meow</em>.</td>
+</tr>
+<tr>
+<td><code>Italicized text is the _cat's meow_.</code></td>
+<td><code>Italicized text is the &lt;em&gt;cat's meow&lt;/em&gt;.</code></td>
+<td>Italicized text is the <em>cat’s meow</em>.</td>
+</tr>
+<tr>
+<td><code>A*cat*meow</code></td>
+<td><code>A&lt;em&gt;cat&lt;/em&gt;meow</code></td>
+<td>A<em>cat</em>meow</td>
+</tr>
+</tbody>
+</table>
+<h4 id="斜体italic用法的最佳实践">斜体（Italic）用法的最佳实践</h4>
+<p>Markdown 的众多应用程序在如何处理单词中间的下划线上意见不一致。为了兼容起见，请用星号标注单词中间的斜体来表示着重。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A*cat*meow</code></td>
+<td><code>A_cat_meow</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="粗体bold和斜体italic">粗体（Bold）和斜体（Italic）</h3>
+<p>要同时用粗体和斜体突出显示文本，请在单词或短语的前后各添加三个星号或下划线。要加粗并用斜体显示单词或短语的中间部分，请在要突出显示的部分前后各添加三个星号，中间不要带空格。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>This text is ***really important***.</code></td>
+<td><code>This text is &lt;strong&gt;&lt;em&gt;really important&lt;/em&gt;&lt;/strong&gt;.</code></td>
+<td>This text is *<strong>really important*</strong>.</td>
+</tr>
+<tr>
+<td><code>This text is ___really important___.</code></td>
+<td><code>This text is &lt;strong&gt;&lt;em&gt;really important&lt;/em&gt;&lt;/strong&gt;.</code></td>
+<td>This text is *<strong>really important*</strong>.</td>
+</tr>
+<tr>
+<td><code>This text is __*really important*__.</code></td>
+<td><code>This text is &lt;strong&gt;&lt;em&gt;really important&lt;/em&gt;&lt;/strong&gt;.</code></td>
+<td>This text is *<strong>really important*</strong>.</td>
+</tr>
+<tr>
+<td><code>This text is **_really important_**.</code></td>
+<td><code>This text is &lt;strong&gt;&lt;em&gt;really important&lt;/em&gt;&lt;/strong&gt;.</code></td>
+<td>This text is *<strong>really important*</strong>.</td>
+</tr>
+<tr>
+<td><code>This is really***very***important text.</code></td>
+<td><code>This is really&lt;strong&gt;&lt;em&gt;very&lt;/em&gt;&lt;/strong&gt;important text.</code></td>
+<td>This is really***very***important text.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="粗体bold和斜体italic用法的最佳实践">粗体（Bold）和斜体（Italic）用法的最佳实践</h4>
+<p>Markdown 应用程序在处理单词或短语中间添加的下划线上并不一致。为了实现兼容性，请使用星号将单词或短语的中间部分加粗并以斜体显示，以示重要。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>This is really***very***important text.</code></td>
+<td><code>This is really___very___important text.</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="块引用blockquotes">块引用（Blockquotes）</h2>
+<p>要创建块引用，请在段落前添加一个 <code>&gt;</code> 符号。</p>
+<pre><code>&gt; Dorothy followed her through many of the beautiful rooms in her castle.
 </code></pre>
-<pre><code class="language-css">body{font-size:12px}
-</code></pre>
-<pre><code class="language-javascript">var s = &quot;JavaScript syntax highlighting&quot;;
-alert(s);
-</code></pre>
-<pre><code class="language-php">&lt;?php
-echo &quot;hello, world!&quot;;
-?&gt;
-</code></pre>
-<pre><code class="language-python">s = &quot;Python syntax highlighting&quot;
-print s
-</code></pre>
-<p>Block Code 代码分组(代码区块)：</p>
-<p>在该行开头缩进4个空格或一个制表符(tab)</p>
-<p><strong>Blockquotes 引用：</strong></p>
+<p>渲染效果如下所示：</p>
 <blockquote>
-<p>Email-style angle brackets<br>
-are used for blockquotes.</p>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+</blockquote>
+<h3 id="多个段落的块引用blockquotes">多个段落的块引用（Blockquotes）</h3>
+<p>块引用可以包含多个段落。为段落之间的空白行各添加一个 <code>&gt;</code> 符号。</p>
+<pre><code>&gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&gt;
+&gt; The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+</code></pre>
+<p>渲染效果如下：</p>
 <blockquote>
-<p>And, they can be nested.</p>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+<p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</p>
 </blockquote>
-<h4 id="headers-in-blockquotes">Headers in blockquotes</h4>
+<h3 id="嵌套块引用nested-blockquotes">嵌套块引用（Nested Blockquotes）</h3>
+<p>块引用可以嵌套。在要嵌套的段落前添加一个 <code>&gt;&gt;</code> 符号。</p>
+<pre><code>&gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&gt;
+&gt;&gt; The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+</code></pre>
+<p>渲染效果如下：</p>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+<blockquote>
+<p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</p>
+</blockquote>
+</blockquote>
+<h3 id="带有其它元素的块引用blockquotes-with-other-elements">带有其它元素的块引用（Blockquotes with Other Elements）</h3>
+<p>块引用可以包含其他 Markdown 格式的元素。并非所有元素都可以使用，你需要进行实验以查看哪些元素有效。</p>
+<pre><code>&gt; #### The quarterly results look great!
+&gt;
+&gt; - Revenue was off the chart.
+&gt; - Profits were higher than ever.
+&gt;
+&gt;  *Everything* is going according to **plan**.
+</code></pre>
+<p>渲染效果如下：</p>
+<blockquote>
+<h4 id="the-quarterly-results-look-great">The quarterly results look great!</h4>
 <ul>
-<li>You can quote a list.</li>
-<li>Etc.</li>
+<li>Revenue was off the chart.</li>
+<li>Profits were higher than ever.</li>
 </ul>
+<p><em>Everything</em> is going according to <strong>plan</strong>.</p>
 </blockquote>
-<p>Hard Line Breaks 换行：</p>
-<p>在一行的结尾处加上2个或2个以上的空格，也可以使用</br>标签<br>
-第一行文字，<br>
-第二行文字</p>
-<p>Horizontal Rules 水平分割线：</p>
+<h2 id="列表lists">列表（Lists）</h2>
+<p>你可以将多个条目组织成有序或无序列表。</p>
+<h3 id="有序列表ordered-lists">有序列表（Ordered Lists）</h3>
+<p>要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1. First item2. Second item3. Third item4. Fourth item</code></td>
+<td><code>&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;li&gt;Fourth item&lt;/li&gt;&lt;/ol&gt;</code></td>
+<td>First itemSecond itemThird itemFourth item</td>
+</tr>
+<tr>
+<td><code>1. First item1. Second item1. Third item1. Fourth item</code></td>
+<td><code>&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;li&gt;Fourth item&lt;/li&gt;&lt;/ol&gt;</code></td>
+<td>First itemSecond itemThird itemFourth item</td>
+</tr>
+<tr>
+<td><code>1. First item8. Second item3. Third item5. Fourth item</code></td>
+<td><code>&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;li&gt;Fourth item&lt;/li&gt;&lt;/ol&gt;</code></td>
+<td>First itemSecond itemThird itemFourth item</td>
+</tr>
+<tr>
+<td><code>1. First item2. Second item3. Third item 1. Indented item 2. Indented item4. Fourth item</code></td>
+<td><code>&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;ol&gt;&lt;li&gt;Indented item&lt;/li&gt;&lt;li&gt;Indented item&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;Fourth item&lt;/li&gt;&lt;/ol&gt;</code></td>
+<td>First itemSecond itemThird itemIndented itemIndented itemFourth item</td>
+</tr>
+</tbody>
+</table>
+<h4 id="有序列表ordered-list用法的最佳实践">有序列表（Ordered List）用法的最佳实践</h4>
+<p>CommonMark 和其它几种轻量级标记语言可以让你使用括号（<code>)</code>）作为分隔符（例如 <code>1) First item</code>），但并非所有的 Markdown 应用程序都支持此种用法，因此，从兼容的角度来看，此用法不推荐。为了兼容起见，请只使用英文句点作为分隔符。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1. First item2. Second item</code></td>
+<td><code>1) First item2) Second item</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="无序列表unordered-lists">无序列表（Unordered Lists）</h3>
+<p>要创建无序列表，请在每个列表项前面添加破折号 (<code>-</code>)、星号 (<code>*</code>) 或加号 (<code>+</code>) 。缩进一个或多个列表项可创建嵌套列表。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>- First item- Second item- Third item- Fourth item</code></td>
+<td><code>&lt;ul&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;li&gt;Fourth item&lt;/li&gt;&lt;/ul&gt;</code></td>
+<td>First itemSecond itemThird itemFourth item</td>
+</tr>
+<tr>
+<td><code>* First item* Second item* Third item* Fourth item</code></td>
+<td><code>&lt;ul&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;li&gt;Fourth item&lt;/li&gt;&lt;/ul&gt;</code></td>
+<td>First itemSecond itemThird itemFourth item</td>
+</tr>
+<tr>
+<td><code>+ First item+ Second item+ Third item+ Fourth item</code></td>
+<td><code>&lt;ul&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;li&gt;Fourth item&lt;/li&gt;&lt;/ul&gt;</code></td>
+<td>First itemSecond itemThird itemFourth item</td>
+</tr>
+<tr>
+<td><code>- First item- Second item- Third item - Indented item - Indented item- Fourth item</code></td>
+<td><code>&lt;ul&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;ul&gt;&lt;li&gt;Indented item&lt;/li&gt;&lt;li&gt;Indented item&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Fourth item&lt;/li&gt;&lt;/ul&gt;</code></td>
+<td>First itemSecond itemThird itemIndented itemIndented itemFourth item</td>
+</tr>
+</tbody>
+</table>
+<h4 id="以数字开头的无序列表项">以数字开头的无序列表项</h4>
+<p>如果你需要以数字开头并且紧跟一个英文句号（也就是 <code>.</code>）的无序列表项，则可以使使用反斜线（<code>\</code>）来 <a href="https://www.markdown.xyz/basic-syntax/#escaping-characters">转义</a> 这个英文句号。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>- 1968\. A great year!- I think 1969 was second best.</code></td>
+<td><code>&lt;ul&gt;&lt;li&gt;1968. A great year!&lt;/li&gt;&lt;li&gt;I think 1969 was second best.&lt;/li&gt;&lt;/ul&gt;</code></td>
+<td>1968. A great year!I think 1969 was second best.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="无序列表unordered-list用法的最佳实践">无序列表（Unordered List）用法的最佳实践</h4>
+<p>Markdown 应用程序在如何处理同一列表中混用不同分隔符上并不一致。为了兼容起见，请不要在同一个列表中混用不同的分隔符，最好选定一种分隔符并一直用下去。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>- First item- Second item- Third item- Fourth item</code></td>
+<td><code>+ First item* Second item- Third item+ Fourth item</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="在列表中添加列表项">在列表中添加列表项</h3>
+<p>要在保留列表连续性的同时在列表中添加另一种元素，请将该元素缩进四个空格或一个制表符，如下例所示：</p>
+<h4 id="段落paragraphs-2">段落（Paragraphs）</h4>
+<pre><code>*   This is the first list item.
+*   Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+*   And here's the third list item.
+</code></pre>
+<p>渲染效果如下：</p>
+<ul>
+<li>
+<p>This is the first list item.</p>
+</li>
+<li>
+<p>Here’s the second list item.</p>
+<p>I need to add another paragraph below the second list item.</p>
+</li>
+<li>
+<p>And here’s the third list item.</p>
+</li>
+</ul>
+<h4 id="引用块blockquotes">引用块（Blockquotes）</h4>
+<pre><code>*   This is the first list item.
+*   Here's the second list item.
+
+    &gt; A blockquote would look great below the second list item.
+
+*   And here's the third list item.
+</code></pre>
+<p>渲染效果如下：</p>
+<ul>
+<li>
+<p>This is the first list item.</p>
+</li>
+<li>
+<p>Here’s the second list item.</p>
+<blockquote>
+<p>A blockquote would look great below the second list item.</p>
+</blockquote>
+</li>
+<li>
+<p>And here’s the third list item.</p>
+</li>
+</ul>
+<h4 id="代码块code-blocks">代码块（Code Blocks）</h4>
+<p><a href="https://www.markdown.xyz/basic-syntax/#code-blocks">代码块（Code blocks）</a> 通常采用四个空格或一个制表符缩进。当它们被放在列表中时，请将它们缩进八个空格或两个制表符。</p>
+<pre><code>1.  Open the file.
+2.  Find the following code block on line 21:
+
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;Test&lt;/title&gt;
+          &lt;/head&gt;
+
+3.  Update the title to match the name of your website.
+</code></pre>
+<p>渲染效果如下：</p>
+<ol>
+<li>
+<p>Open the file.</p>
+</li>
+<li>
+<p>Find the following code block on line 21:</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Test&lt;/title&gt;
+  &lt;/head&gt;
+</code></pre>
+</li>
+<li>
+<p>Update the title to match the name of your website.</p>
+</li>
+</ol>
+<h4 id="列表lists-2">列表（Lists）</h4>
+<p>你可以将无序列表嵌套在有序列表中，反之亦然。</p>
+<pre><code>1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
+</code></pre>
+<p>渲染效果如下：</p>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item
+<ul>
+<li>Indented item</li>
+<li>Indented item</li>
+</ul>
+</li>
+<li>Fourth item</li>
+</ol>
+<h2 id="代码">代码</h2>
+<p>要将单词或短语表示为代码，请将其包裹在反引号 (```) 中。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>At the command prompt, type</code>nano<code>.</code></td>
+<td><code>At the command prompt, type &lt;code&gt;nano&lt;/code&gt;.</code></td>
+<td>At the command prompt, type <code>nano</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="转义反引号">转义反引号</h3>
+<p>如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(````)中。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Use `code` in your Markdown file.</code></td>
+<td><code>&lt;code&gt;Use</code>code<code>in your Markdown file.&lt;/code&gt;</code></td>
+<td><code>Use</code>code<code>in your Markdown file.</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="代码块code-blocks-2">代码块（Code Blocks）</h3>
+<p>要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。</p>
+<pre><code>    &lt;html&gt;
+      &lt;head&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+</code></pre>
+<p>渲染效果如下：</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+<p><strong>注意：</strong> 要创建不用缩进的代码块，请使用 <a href="https://www.markdown.xyz/extended-syntax/#fenced-code-blocks">围栏式代码块（fenced code blocks）</a>.</p>
+<h2 id="分隔线horizontal-rules">分隔线（Horizontal Rules）</h2>
+<p>要创建分隔线，请在单独一行上使用三个或多个星号 (<code>***</code>)、破折号 (<code>---</code>) 或下划线 (<code>___</code>) ，并且不能包含其他内容。</p>
+<pre><code>***
+
+---
+
+_________________
+</code></pre>
+<p>以上三个分隔线的渲染效果看起来都一样：</p>
 <hr>
-<hr>
-<hr>
-<p>Escape character 转义符(反斜杠)：</p>
-<p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁</p>
-<p>边的方式来做出强调效果，你可以在星号的前面加上反斜杠：<br>
-*literal asterisks*<br>
-Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：<br>
-\反斜杠 `反引号 *星号 _下划线 {}花括号 []方括号 ()括弧 #井字号 +加号 -减号 .英</p>
-<p>文句 !感叹号</p>
-<p>Additional 补充：</p>
-<p>Markdown也支持传统的HTML标签。<br>
-比如一个链接，你不太喜欢Markdown的写法，也可以直接写成http://www.baidu.com&quot;&gt;百度</p>
-</a>
-<p>Markdown官网：Daring Fireball: Markdown<br>
-参考资料：Markdown 語法說明</p>
-<p>Markdown在线编辑器：<br>
-Dillinger：Dillinger, the Last Markdown Editor ever.<br>
-Markdown Here：Markdown Here<br>
-原格式显示</p>
-<pre>
-内容...
-</pre>
-<p>具体效果可以以上文字复制到Markdown中观看</p>
+<h3 id="分隔线horizontal-rule用法最佳实践">分隔线（Horizontal Rule）用法最佳实践</h3>
+<p>为了兼容性，请在分隔线的前后均添加空白行。</p>
+<table>
+<thead>
+<tr>
+<th>✅ 这样做</th>
+<th>❌ 不要这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Try to put a blank line before...---...and after a horizontal rule.</code></td>
+<td><code>Without blank lines, this would be a heading.---Don't do this!</code></td>
+</tr>
+</tbody>
+</table>
 
             </div>
           </article>
@@ -324,8 +804,10 @@ Markdown Here：Markdown Here<br>
 
     </section>
     
+    
+
     <footer>
-  Designed and Coded by © <a href="http://mugui.me">木鬼</a>
+  Designed and Coded by © <a href="http://shiyi.me">时宜</a>
 丨Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
 </footer>
 
@@ -336,5 +818,6 @@ Markdown Here：Markdown Here<br>
   hljs.initHighlightingOnLoad()
 </script>
 
+    
   </body>
 </html>
