@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.shiyi.me</id>
-    <title>时宜</title>
-    <updated>2021-07-31T12:13:54.220Z</updated>
+    <title>真一</title>
+    <updated>2021-08-02T15:55:58.471Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.shiyi.me"/>
     <link rel="self" href="https://blog.shiyi.me/atom.xml"/>
     <subtitle>让子弹飞一会儿</subtitle>
     <logo>https://blog.shiyi.me/images/avatar.png</logo>
     <icon>https://blog.shiyi.me/favicon.ico</icon>
-    <rights>All rights reserved 2021, 时宜</rights>
+    <rights>All rights reserved 2021, 真一</rights>
+    <entry>
+        <title type="html"><![CDATA[八月一日 宜向往]]></title>
+        <id>https://blog.shiyi.me/post/XqRJmkdk_/</id>
+        <link href="https://blog.shiyi.me/post/XqRJmkdk_/">
+        </link>
+        <updated>2021-08-01T15:23:38.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Markdown 语法手册]]></title>
         <id>https://blog.shiyi.me/post/markdown-yu-fa-shou-ce/</id>
@@ -19,57 +26,6 @@
         <summary type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[七月六日  宜再会]]></title>
-        <id>https://blog.shiyi.me/post/qi-yue-liu-ri-yi-zai-hui/</id>
-        <link href="https://blog.shiyi.me/post/qi-yue-liu-ri-yi-zai-hui/">
-        </link>
-        <updated>2021-07-06T12:41:52.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[七月五日  宜风雅]]></title>
-        <id>https://blog.shiyi.me/post/qi-yue-wu-ri-yi-feng-ya/</id>
-        <link href="https://blog.shiyi.me/post/qi-yue-wu-ri-yi-feng-ya/">
-        </link>
-        <updated>2021-07-05T12:40:12.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[七月四日  忌分割]]></title>
-        <id>https://blog.shiyi.me/post/qi-yue-si-ri-ji-fen-ge/</id>
-        <link href="https://blog.shiyi.me/post/qi-yue-si-ri-ji-fen-ge/">
-        </link>
-        <updated>2021-07-04T12:39:28.000Z</updated>
-        <summary type="html"><![CDATA[<p>在掀腾的海波之中，</p>
-<p>我是小小的孤岛，</p>
-<p>如同其他的孤岛</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>在掀腾的海波之中，</p>
-<p>我是小小的孤岛，</p>
-<p>如同其他的孤岛</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[七月三日  宜厮守]]></title>
-        <id>https://blog.shiyi.me/post/qi-yue-san-ri-yi-si-shou/</id>
-        <link href="https://blog.shiyi.me/post/qi-yue-san-ri-yi-si-shou/">
-        </link>
-        <updated>2021-07-03T12:38:19.000Z</updated>
-        <summary type="html"><![CDATA[<p>早上，阿尔琼像往常一样被收音机定时的7点新闻闹醒。他摸着旁边空空的枕头，才想起妻子出差了。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>早上，阿尔琼像往常一样被收音机定时的7点新闻闹醒。他摸着旁边空空的枕头，才想起妻子出差了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[七月二日  宜沧桑]]></title>
-        <id>https://blog.shiyi.me/post/qi-yue-er-ri-yi-cang-sang/</id>
-        <link href="https://blog.shiyi.me/post/qi-yue-er-ri-yi-cang-sang/">
-        </link>
-        <updated>2021-07-02T12:37:24.000Z</updated>
-        <summary type="html"><![CDATA[<p>俄罗斯的教堂，与街头随处可见的人物雕像一样多。雕像多是这个民族历史中各个阶层的伟大人物。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>俄罗斯的教堂，与街头随处可见的人物雕像一样多。雕像多是这个民族历史中各个阶层的伟大人物。</p>
 ]]></content>
     </entry>
     <entry>
