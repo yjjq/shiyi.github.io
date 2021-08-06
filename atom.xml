@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.shiyi.me</id>
     <title>真一</title>
-    <updated>2021-08-04T12:09:27.445Z</updated>
+    <updated>2021-08-06T05:22:12.541Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.shiyi.me"/>
     <link rel="self" href="https://blog.shiyi.me/atom.xml"/>
@@ -74,6 +74,13 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>又是一年槐花儿飘香的季节，儿时那些带有妈妈专属味道的槐花美食有没有勾起小伙伴们的念想？不过，槐花可不是都能吃的。常见的槐花有三种：淡黄色的国槐花，夏末开花，可入药但不可食用；白色的刺槐花（也叫洋槐花），夏初开花花香味甜，可食用不可入药；红色的槐花（变种）仅供观赏，不能食用。可见，我们吃的槐花美食来自白色洋槐花。</p>
 ]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[初见你时，风不动，幡不动]]></title>
+        <id>https://blog.shiyi.me/post/lyBe42TLs/</id>
+        <link href="https://blog.shiyi.me/post/lyBe42TLs/">
+        </link>
+        <updated>2020-10-01T05:14:00.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
