@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.shiyi.me</id>
     <title>真一</title>
-    <updated>2021-08-07T15:10:22.084Z</updated>
+    <updated>2021-08-07T15:33:06.140Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.shiyi.me"/>
     <link rel="self" href="https://blog.shiyi.me/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://blog.shiyi.me/images/avatar.png</logo>
     <icon>https://blog.shiyi.me/favicon.ico</icon>
     <rights>All rights reserved 2021, 真一</rights>
+    <entry>
+        <title type="html"><![CDATA[暂且当个留言板]]></title>
+        <id>https://blog.shiyi.me/post/ZTWCZTotK/</id>
+        <link href="https://blog.shiyi.me/post/ZTWCZTotK/">
+        </link>
+        <updated>2021-08-07T15:29:56.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[在太空中鸟瞰飞行器入大气层烧毁]]></title>
         <id>https://blog.shiyi.me/post/avttr_E6v/</id>

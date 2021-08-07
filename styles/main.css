@@ -1003,7 +1003,7 @@ nav {
     font-size: 24px;
     padding: 16px 0;
   }
-  .post-detail .post iframe {
+  .post-detail .post .post-content iframe {
     height: 220px;
   }
 }
