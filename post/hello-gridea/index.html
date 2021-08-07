@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="light dark">
 <title>Hello Gridea | 真一</title>
-<link rel="shortcut icon" href="https://blog.shiyi.me/favicon.ico?v=1628314252733">
+<link rel="shortcut icon" href="https://blog.shiyi.me/favicon.ico?v=1628345131574">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 <!-- <link rel="stylesheet" href="https://blog.shiyi.me/styles/main.css"> -->
 
@@ -27,13 +27,83 @@
   })();
 </script>
 
+    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+    <style>
+      :root {
+        /* 字体大小 */
+        --waline-font-size: 14px;
+      
+        /* 常规颜色 */
+        --waline-white: #fff;
+        --waline-light-grey: #999;
+        --waline-dark-grey: #666;
+      
+        /* 主题色 */
+        --waline-theme-color: var(--primary);
+        --waline-active-color: var(--secondary);
+      
+        /* 布局颜色 */
+        --waline-text-color: var(--primarytext);
+        --waline-bgcolor: var(--background);
+        --waline-bgcolor-light: var(--surface);
+        --waline-bgcolor-hover: var(--surface);
+        --waline-border-color: #ddd;
+        --waline-disable-bgcolor: #f8f8f8;
+        --waline-disable-color: #bbb;
+        --waline-code-bgcolor: #282c34;
+      
+        /* 特殊颜色 */
+        --waline-bq-color: #f0f0f0;
+      
+        /* 头像 */
+        --waline-avatar-size: 3.25rem;
+        --waline-mobile-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+      
+        /* 徽章 */
+        --waline-badge-color: #3498db;
+        --waline-badge-font-size: 0.775em;
+      
+        /* 信息 */
+        --waline-info-bgcolor: var(--surface);
+        --waline-info-color: var(--primarytext);
+        --waline-info-font-size: 0.625em;
+      
+        /* 渲染选择 */
+        --waline-border: 1px solid var(--waline-border-color);
+        --waline-avatar-radius: 50%;
+        --waline-box-shadow: none;
+      }
+      @media (prefers-color-scheme: dark){
+        darkmode-selector {
+          /* 常规颜色 */
+          --waline-white: #000;
+          --waline-light-grey: #666;
+          --waline-dark-grey: #999;
+
+          /* 布局颜色 */
+          --waline-text-color: #888;
+          --waline-bgcolor: #1e1e1e;
+          --waline-bgcolor-light: #272727;
+          --waline-border-color: #333;
+          --waline-disable-bgcolor: #444;
+          --waline-disable-color: #272727;
+
+          /* 特殊颜色 */
+          --waline-bq-color: #272727;
+
+          /* 其他颜色 */
+          --waline-info-bgcolor: #272727;
+          --waline-info-color: #666;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
   <nav>
     <div class="logo">
       <a href="https://blog.shiyi.me">
-        <img class="" src="https://blog.shiyi.me/favicon.ico?v=1628314252733" alt="">
+        <img class="" src="https://blog.shiyi.me/favicon.ico?v=1628345131574" alt="">
       </a>
     </div>
 
@@ -174,6 +244,19 @@
         </div>
     
         
+        <article>
+          <div id="waline"></div>
+        </article>
+        
+        <script>
+          Waline({
+            el: '#waline',
+            serverURL: 'https://sywaline.vercel.app',
+            visitor: true, // 阅读量统计
+            avatar: 'mp',
+
+          });
+        </script>
 
         
 
