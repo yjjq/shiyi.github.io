@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.shiyi.me</id>
     <title>时宜 · 秋 · 几暇怡情</title>
-    <updated>2021-08-09T15:31:27.912Z</updated>
+    <updated>2021-08-11T03:55:36.952Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.shiyi.me"/>
     <link rel="self" href="https://blog.shiyi.me/atom.xml"/>
@@ -11,11 +11,11 @@
     <icon>https://blog.shiyi.me/favicon.ico</icon>
     <rights>All rights reserved 2021, 时宜 · 秋 · 几暇怡情</rights>
     <entry>
-        <title type="html"><![CDATA[暂且当个留言板]]></title>
-        <id>https://blog.shiyi.me/post/ZTWCZTotK/</id>
-        <link href="https://blog.shiyi.me/post/ZTWCZTotK/">
+        <title type="html"><![CDATA[每日宇航员在BC工地采访马斯克（二）]]></title>
+        <id>https://blog.shiyi.me/post/VYK-Dd1UG/</id>
+        <link href="https://blog.shiyi.me/post/VYK-Dd1UG/">
         </link>
-        <updated>2021-08-07T15:29:56.000Z</updated>
+        <updated>2021-08-11T03:36:36.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[在太空中鸟瞰飞行器入大气层烧毁]]></title>
@@ -88,18 +88,5 @@
         <link href="https://blog.shiyi.me/post/lyBe42TLs/">
         </link>
         <updated>2020-10-01T05:14:00.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://blog.shiyi.me/post/hello-gridea/</id>
-        <link href="https://blog.shiyi.me/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></content>
     </entry>
 </feed>
