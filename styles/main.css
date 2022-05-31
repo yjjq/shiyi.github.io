@@ -1049,6 +1049,11 @@ h6:hover .anchor {
   margin: 25px 0;
   width: 200px;
 }
+@media screen and (max-width: 420px) {
+  .archive-month-header {
+    display: none;
+  }
+}
 .archive-month:not(:last-of-type) {
   border-bottom: 1px solid var(--border);
 }
