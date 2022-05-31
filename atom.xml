@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shiyi.me</id>
     <title>Poetic Shiyi</title>
-    <updated>2022-05-31T10:54:42.871Z</updated>
+    <updated>2022-05-31T11:16:39.974Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shiyi.me"/>
     <link rel="self" href="https://shiyi.me/atom.xml"/>
@@ -10,13 +10,6 @@
     <logo>https://shiyi.me/images/avatar.png</logo>
     <icon>https://shiyi.me/favicon.ico</icon>
     <rights>All rights reserved 2022, Poetic Shiyi</rights>
-    <entry>
-        <title type="html"><![CDATA[ceshi]]></title>
-        <id>https://shiyi.me/post/PNsfUpa3F/</id>
-        <link href="https://shiyi.me/post/PNsfUpa3F/">
-        </link>
-        <updated>2022-05-31T09:33:14.000Z</updated>
-    </entry>
     <entry>
         <title type="html"><![CDATA[宜迎新]]></title>
         <id>https://shiyi.me/post/zjPkmQ1Ig/</id>
@@ -79,5 +72,16 @@
         <link href="https://shiyi.me/post/XqRJmkdk_/">
         </link>
         <updated>2021-08-01T15:23:38.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown 语法手册]]></title>
+        <id>https://shiyi.me/post/markdown-yu-fa-shou-ce/</id>
+        <link href="https://shiyi.me/post/markdown-yu-fa-shou-ce/">
+        </link>
+        <updated>2021-07-20T02:54:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。</p>
+]]></content>
     </entry>
 </feed>
