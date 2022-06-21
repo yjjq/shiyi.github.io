@@ -251,6 +251,7 @@ body:not(.dark) #sun {
 .logo-switches {
   display: inline-flex;
   margin: auto 4px;
+  padding-left: 10px;
 }
 .logo-switches {
   flex-wrap: inherit;
