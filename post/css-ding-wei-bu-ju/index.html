@@ -1,0 +1,179 @@
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>
+    CSS 定位布局 - 拾遗
+</title>
+<link rel="shortcut icon" href="https://yjjq.github.io/favicon.ico" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yjjq.github.io/styles/main.css" />
+<link rel="alternate" type="application/atom+xml" title="CSS 定位布局 - 拾遗 - Atom Feed" href="https://yjjq.github.io/atom.xml" />
+
+
+        <meta name="description" content="定位布局可以让元素脱离文档流，钉在你指定的位置。
+相对定位
+移动元素的位置，并且保留原本的位置。
+参照元素原本的位置进行移动。
+div {
+	position: relative;
+}
+
+绝对定位
+移动元素的位置，并且去除原本的位置。
+默认..." />
+        <meta property="og:title" content="CSS 定位布局 - 拾遗" />
+        <meta property="og:description" content="定位布局可以让元素脱离文档流，钉在你指定的位置。
+相对定位
+移动元素的位置，并且保留原本的位置。
+参照元素原本的位置进行移动。
+div {
+	position: relative;
+}
+
+绝对定位
+移动元素的位置，并且去除原本的位置。
+默认..." />
+        <meta property="og:type" content="articles" />
+        <meta property="og:url" content="https://yjjq.github.io/post/css-ding-wei-bu-ju/" />
+        <meta property="og:image"
+            content="https://yjjq.github.io/images/avatar.png" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="1200" />
+        <meta name="twitter:title" content="CSS 定位布局 - 拾遗" />
+        <meta name="twitter:description" content="定位布局可以让元素脱离文档流，钉在你指定的位置。
+相对定位
+移动元素的位置，并且保留原本的位置。
+参照元素原本的位置进行移动。
+div {
+	position: relative;
+}
+
+绝对定位
+移动元素的位置，并且去除原本的位置。
+默认..." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://yjjq.github.io/post/css-ding-wei-bu-ju/" />
+
+
+        
+            <link rel="stylesheet" href="https://yjjq.github.io/media/css/prism-1.css" />
+        
+
+        
+</head>
+
+<body>
+    <header style="justify-content: center;height: 3.75rem;max-width: 43rem;">
+        <a href="https://yjjq.github.io">
+            <picture>
+              <source srcset="https://yjjq.github.io/images/dark.svg" media="(prefers-color-scheme: dark)">
+                <img src="https://yjjq.github.io/images/avatar.png?v=1684327171747" alt="" class="logo">
+            </picture>
+        </a>
+    </header>
+    <main style="min-height: calc(100vh - var(--header-height) - var(--footer-height) - 1rem);">
+        <article>
+            
+            <div class="article-date">
+                2020-06-16
+            </div>
+            <div class="article-title">
+                <h1>CSS 定位布局</h1>
+            </div>
+            <hr style="background-color: var(--bg-color); width: 60%;height: 2px;margin: calc(var(--gap) * 2) auto;">
+            <div class="article-content" v-pre>
+                <p>定位布局可以让元素脱离文档流，钉在你指定的位置。</p>
+<h2 id="相对定位">相对定位</h2>
+<p>移动元素的位置，并且保留原本的位置。</p>
+<p>参照元素原本的位置进行移动。</p>
+<pre><code class="language-css">div {
+	position: relative;
+}
+</code></pre>
+<h2 id="绝对定位">绝对定位</h2>
+<p>移动元素的位置，并且去除原本的位置。</p>
+<p>默认参照整个页面的位置进行移动。如果父级元素有定位属性，则参照父级元素的位置进行移动。</p>
+<pre><code class="language-css">div {
+	position: relative;
+}
+
+div img {
+	position: absolute;
+}
+</code></pre>
+<blockquote>
+<ul>
+<li>如果子元素的父元素没有定位属性，那么子元素的定位将参照离自己最近的拥有定位属性的上级元素。</li>
+<li>有滚动条时，元素会随着内容滚动。</li>
+</ul>
+</blockquote>
+<h2 id="粘性定位">粘性定位</h2>
+<p>元素可以在页面滚动时，钉在指定位置。</p>
+<pre><code class="language-css">div {
+	position: sticky;
+}
+</code></pre>
+<h2 id="固定定位">固定定位</h2>
+<p>元素可以固定到页面的指定位置。</p>
+<p>参照整个页面指定位置。</p>
+<pre><code class="language-css">div {
+	position: fixed;
+}
+</code></pre>
+
+            </div>
+            <hr style="background-color: var(--bg-color); width: 60%;height: 2px;margin: calc(var(--gap) * 2) auto;">
+            <div class="article-tags">
+                
+                    <a href="https://yjjq.github.io/tag/css/" class="article-tag">
+                      #CSS
+                    </a>
+                
+            </div>
+            
+        </article>  
+            <div class="article-nav">
+              
+                  <a class="prev" href="https://yjjq.github.io/post/dong-zhi/">
+                      <span>上一篇</span>
+                      <br>
+                      <span>冬至大如年</span>
+                  </a>
+              
+              
+                  <a class="next" href="https://yjjq.github.io/post/morocco/">
+                      <span>下一篇</span>
+                      <br>
+                      <span>Morocco 摩洛哥</span>
+                  </a>
+              
+            </div>
+        
+    </main>
+
+    <footer v-pre>
+    <span> 💤 </span>
+</footer>
+
+<button onclick="topFunction()" id="backtop" class="btt">
+  <div class="arrow-up"></div>
+</button>
+
+
+
+    <script src="https://yjjq.github.io/media/scripts/main.js"></script>
+    <script src="https://yjjq.github.io/media/scripts/instantclick.js"></script>
+
+    <!-- Code Highlight -->
+    
+      <script src="https://yjjq.github.io/media/prism.js"></script>
+      <script>
+        Prism.highlightAll();
+      </script>
+    
+
+</body>
+</html>

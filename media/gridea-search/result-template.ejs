@@ -1,0 +1,32 @@
+<% posts.forEach(function(post) { %>
+    <div class="post-card">
+        <div class="post-title">
+            <p>
+            <% if (post.isTop) { %>
+                <span><i class="ri-star-line"></i></span>
+            <% } %>
+            <a href="<%= post.link %>">
+                <%= post.title %>
+            </a>
+            </p>
+        </div>
+        <div class="post-content">
+            <%- post.searchedPreview %>
+        </div>
+        <div class="post-info">
+            <span>
+                <%= post.dateFormat %> &nbsp
+            </span>
+            <span>
+                <% post.tags.forEach(function(tag) { %>
+                    <a href="<%= tag.link %>" class="post-info-tags">
+                      #<%= tag.name %>
+                    </a>
+                <% }); %>
+            </span>
+        </div>
+        <a href="<%= post.link %>" class="readmore">
+            <span>阅读更多</span>
+        </a>
+    </div>
+<% }); %>
